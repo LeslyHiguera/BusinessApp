@@ -11,10 +11,10 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        initialSetup(application: application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
@@ -74,6 +74,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+
+}
+
+private extension AppDelegate {
+    
+    func initialSetup(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        setInitialController()
+    }
+
+    func setInitialController() {
+        guard #available(iOS 13, *) else {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible()
+            let navigationController = UINavigationController(rootViewController: ListOfBusinessViewController())
+            window?.rootViewController = navigationController
+            return
         }
     }
 
