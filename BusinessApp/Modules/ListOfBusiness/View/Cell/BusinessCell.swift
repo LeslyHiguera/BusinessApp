@@ -7,7 +7,9 @@
 
 import UIKit
 
-class BusinessCell: UICollectionViewCell {
+class BusinessCell: UITableViewCell {
+    
+    static let name = String(describing: BusinessCell.self)
     
     //MARK: - IBOutlets
     
@@ -16,7 +18,9 @@ class BusinessCell: UICollectionViewCell {
     @IBOutlet private weak var descriptionBusinessLabel: UILabel!
     @IBOutlet private weak var businessImage: UIImageView!
     
+    //MARK: - Properties
     
+    var showBusiness: MyBusiness?
 
     override func awakeFromNib() {
         super.awakeFromNib()

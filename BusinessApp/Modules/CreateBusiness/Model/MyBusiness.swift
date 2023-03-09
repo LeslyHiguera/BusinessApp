@@ -8,7 +8,7 @@
 import Foundation
 
 struct MyBusiness {
-    var nombre: String?
-    var telefono: Int64?
-    var acercaDe: String?
+    var name: String?
+    var phoneNumber: Int64?
+    var aboutBusiness: String?
 }

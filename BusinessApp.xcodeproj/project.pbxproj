@@ -12,8 +12,6 @@
 		A618772629B91F2300BEF4F7 /* MyBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618772529B91F2300BEF4F7 /* MyBusiness.swift */; };
 		A618772A29B9424600BEF4F7 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618772829B9424500BEF4F7 /* BusinessCell.swift */; };
 		A618772B29B9424600BEF4F7 /* BusinessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A618772929B9424600BEF4F7 /* BusinessCell.xib */; };
-		B02DB37D29B7EBDD00D03E7F /* ListOfBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02DB37B29B7EBDD00D03E7F /* ListOfBusinessViewController.swift */; };
-		B02DB37E29B7EBDD00D03E7F /* ListOfBusinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02DB37C29B7EBDD00D03E7F /* ListOfBusinessViewController.xib */; };
 		B04BB81629B663AF00505316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BB81529B663AF00505316 /* AppDelegate.swift */; };
 		B04BB81829B663AF00505316 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BB81729B663AF00505316 /* SceneDelegate.swift */; };
 		B04BB81D29B663AF00505316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04BB81B29B663AF00505316 /* Main.storyboard */; };
@@ -23,6 +21,9 @@
 		B04BB83029B663B100505316 /* BusinessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BB82F29B663B100505316 /* BusinessAppTests.swift */; };
 		B04BB83A29B663B100505316 /* BusinessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BB83929B663B100505316 /* BusinessAppUITests.swift */; };
 		B04BB83C29B663B100505316 /* BusinessAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04BB83B29B663B100505316 /* BusinessAppUITestsLaunchTests.swift */; };
+		B07B238929B9693400159202 /* ListOfBusinessAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B238829B9693400159202 /* ListOfBusinessAdapter.swift */; };
+		B07B238C29B9737A00159202 /* ListBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B238A29B9737A00159202 /* ListBusinessViewController.swift */; };
+		B07B238D29B9737A00159202 /* ListBusinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07B238B29B9737A00159202 /* ListBusinessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,6 @@
 		A618772529B91F2300BEF4F7 /* MyBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBusiness.swift; sourceTree = "<group>"; };
 		A618772829B9424500BEF4F7 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		A618772929B9424600BEF4F7 /* BusinessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCell.xib; sourceTree = "<group>"; };
-		B02DB37B29B7EBDD00D03E7F /* ListOfBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBusinessViewController.swift; sourceTree = "<group>"; };
-		B02DB37C29B7EBDD00D03E7F /* ListOfBusinessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfBusinessViewController.xib; sourceTree = "<group>"; };
 		B04BB81229B663AF00505316 /* BusinessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04BB81529B663AF00505316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04BB81729B663AF00505316 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +62,9 @@
 		B04BB83529B663B100505316 /* BusinessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04BB83929B663B100505316 /* BusinessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAppUITests.swift; sourceTree = "<group>"; };
 		B04BB83B29B663B100505316 /* BusinessAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B07B238829B9693400159202 /* ListOfBusinessAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBusinessAdapter.swift; sourceTree = "<group>"; };
+		B07B238A29B9737A00159202 /* ListBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBusinessViewController.swift; sourceTree = "<group>"; };
+		B07B238B29B9737A00159202 /* ListBusinessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListBusinessViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,6 @@
 		A618771A29B804F400BEF4F7 /* CreateBusiness */ = {
 			isa = PBXGroup;
 			children = (
-				A618771F29B8072100BEF4F7 /* Adapter */,
 				A618771E29B8071400BEF4F7 /* Model */,
 				A618771D29B8070600BEF4F7 /* View */,
 				A618771C29B806FB00BEF4F7 /* Router */,
@@ -133,25 +134,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A618771F29B8072100BEF4F7 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
-		A618772429B80A9F00BEF4F7 /* InfoBusiness */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = InfoBusiness;
-			sourceTree = "<group>";
-		};
 		A618772729B940C400BEF4F7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				A618772829B9424500BEF4F7 /* BusinessCell.swift */,
 				A618772929B9424600BEF4F7 /* BusinessCell.xib */,
+				B07B238A29B9737A00159202 /* ListBusinessViewController.swift */,
+				B07B238B29B9737A00159202 /* ListBusinessViewController.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -178,18 +167,10 @@
 		B02DB38129B7ED8300D03E7F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A618772429B80A9F00BEF4F7 /* InfoBusiness */,
 				A618771A29B804F400BEF4F7 /* CreateBusiness */,
 				B02DB38529B7EDFB00D03E7F /* ListOfBusiness */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		B02DB38229B7EDA700D03E7F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		B02DB38329B7EDAF00D03E7F /* ViewModel */ = {
@@ -203,8 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				A618772729B940C400BEF4F7 /* Cell */,
-				B02DB37B29B7EBDD00D03E7F /* ListOfBusinessViewController.swift */,
-				B02DB37C29B7EBDD00D03E7F /* ListOfBusinessViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,8 +191,7 @@
 		B02DB38529B7EDFB00D03E7F /* ListOfBusiness */ = {
 			isa = PBXGroup;
 			children = (
-				B02DB38729B7EEA000D03E7F /* Adapter */,
-				B02DB38229B7EDA700D03E7F /* Model */,
+				B07B238729B9690F00159202 /* Adapter */,
 				B02DB38429B7EDC300D03E7F /* View */,
 				B02DB38629B7EE8300D03E7F /* Router */,
 				B02DB38329B7EDAF00D03E7F /* ViewModel */,
@@ -226,13 +204,6 @@
 			children = (
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		B02DB38729B7EEA000D03E7F /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Adapter;
 			sourceTree = "<group>";
 		};
 		B04BB80929B663AF00505316 = {
@@ -282,6 +253,14 @@
 				B04BB83B29B663B100505316 /* BusinessAppUITestsLaunchTests.swift */,
 			);
 			path = BusinessAppUITests;
+			sourceTree = "<group>";
+		};
+		B07B238729B9690F00159202 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				B07B238829B9693400159202 /* ListOfBusinessAdapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,9 +369,9 @@
 			files = (
 				B04BB82529B663B000505316 /* LaunchScreen.storyboard in Resources */,
 				B04BB82229B663B000505316 /* Assets.xcassets in Resources */,
-				B02DB37E29B7EBDD00D03E7F /* ListOfBusinessViewController.xib in Resources */,
 				B04BB81D29B663AF00505316 /* Main.storyboard in Resources */,
 				A618772329B8077600BEF4F7 /* CreateBusinessViewController.xib in Resources */,
+				B07B238D29B9737A00159202 /* ListBusinessViewController.xib in Resources */,
 				A618772B29B9424600BEF4F7 /* BusinessCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,11 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A618772A29B9424600BEF4F7 /* BusinessCell.swift in Sources */,
-				B02DB37D29B7EBDD00D03E7F /* ListOfBusinessViewController.swift in Sources */,
 				B04BB82029B663AF00505316 /* BusinessApp.xcdatamodeld in Sources */,
 				A618772229B8077600BEF4F7 /* CreateBusinessViewController.swift in Sources */,
+				B07B238929B9693400159202 /* ListOfBusinessAdapter.swift in Sources */,
 				B04BB81629B663AF00505316 /* AppDelegate.swift in Sources */,
 				B04BB81829B663AF00505316 /* SceneDelegate.swift in Sources */,
+				B07B238C29B9737A00159202 /* ListBusinessViewController.swift in Sources */,
 				A618772629B91F2300BEF4F7 /* MyBusiness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CS6D5JZQ9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BusinessApp/Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -625,8 +606,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CS6D5JZQ9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BusinessApp/Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -640,6 +623,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leslyhiguera.BusinessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

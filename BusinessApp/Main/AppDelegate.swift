@@ -89,7 +89,7 @@ private extension AppDelegate {
         guard #available(iOS 13, *) else {
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.makeKeyAndVisible()
-            let navigationController = UINavigationController(rootViewController: ListOfBusinessViewController())
+            let navigationController = UINavigationController(rootViewController: ListBusinessViewController())
             window?.rootViewController = navigationController
             return
         }

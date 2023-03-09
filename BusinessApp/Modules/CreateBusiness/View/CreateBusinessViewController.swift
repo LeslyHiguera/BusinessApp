@@ -16,9 +16,7 @@ class CreateBusinessViewController: UIViewController {
     @IBOutlet weak var aboutBusinessTextField: UITextField!
     @IBOutlet weak var saveBusinessButton: UIButton!
     
-    //MARK: - Properties
     
-    var showBusiness: MyBusiness?
     
     override func viewDidLoad() {
         super.viewDidLoad()
