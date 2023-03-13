@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescriptionViewController" customModule="BusinessApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addRating" destination="07L-UB-qZB" id="pgE-W0-hJr"/>
+                <outlet property="businessImage" destination="Gz0-vn-78D" id="lHI-oS-8tT"/>
+                <outlet property="deleteBusiness" destination="iX3-lA-oGG" id="jlG-5M-AI3"/>
+                <outlet property="descriptionTextField" destination="yrP-FU-POF" id="9qi-UL-OJT"/>
+                <outlet property="nameBusiness" destination="By4-UL-8Qj" id="JL7-CO-rz6"/>
+                <outlet property="phoneNumberLabel" destination="wKy-WE-66T" id="d01-6e-deX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gz0-vn-78D">
+                    <rect key="frame" x="95" y="97" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Jwx-nq-Iv1"/>
+                        <constraint firstAttribute="height" constant="200" id="cTt-85-4pa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de negocio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By4-UL-8Qj">
+                    <rect key="frame" x="101.66666666666669" y="337" width="187" height="22"/>
+                    <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="20"/>
+                    <color key="textColor" red="0.28627450980000002" green="0.82352941180000006" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Descripción" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrP-FU-POF">
+                    <rect key="frame" x="45" y="416" width="300" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Ucu-qc-2yM"/>
+                        <constraint firstAttribute="height" constant="100" id="ivc-5V-Rdq"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKy-WE-66T">
+                    <rect key="frame" x="166.66666666666666" y="369" width="57" height="17"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calificación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIT-W0-n4q">
+                    <rect key="frame" x="45" y="551" width="77" height="17"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07L-UB-qZB">
+                    <rect key="frame" x="95" y="682" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.14099487660000001" green="0.60681098700000002" blue="0.74697810409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MSp-ZY-GYO"/>
+                        <constraint firstAttribute="width" constant="200" id="dAJ-1V-8mU"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Agregar calificación">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addRatingAction:" destination="-1" eventType="touchUpInside" id="8Yi-hf-mOg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX3-lA-oGG">
+                    <rect key="frame" x="95" y="742" width="200" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Jgg-D7-5xp"/>
+                        <constraint firstAttribute="width" constant="200" id="z2u-LS-pHL"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Eliminar negocio">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wKy-WE-66T" firstAttribute="top" secondItem="By4-UL-8Qj" secondAttribute="bottom" constant="10" id="2Vj-Oe-Nfn"/>
+                <constraint firstItem="Gz0-vn-78D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3QB-Km-dqy"/>
+                <constraint firstItem="wKy-WE-66T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4cm-uo-Kiz"/>
+                <constraint firstItem="07L-UB-qZB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CHi-Hb-ewV"/>
+                <constraint firstItem="yrP-FU-POF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EBP-fP-MEp"/>
+                <constraint firstItem="RIT-W0-n4q" firstAttribute="leading" secondItem="yrP-FU-POF" secondAttribute="leading" id="Huy-Jp-r2W"/>
+                <constraint firstItem="07L-UB-qZB" firstAttribute="top" secondItem="RIT-W0-n4q" secondAttribute="bottom" constant="114" id="LoH-3B-I7m"/>
+                <constraint firstItem="RIT-W0-n4q" firstAttribute="top" secondItem="yrP-FU-POF" secondAttribute="bottom" constant="35" id="Nfe-AF-3QJ"/>
+                <constraint firstItem="iX3-lA-oGG" firstAttribute="top" secondItem="07L-UB-qZB" secondAttribute="bottom" constant="20" id="SvB-jD-wiy"/>
+                <constraint firstItem="By4-UL-8Qj" firstAttribute="top" secondItem="Gz0-vn-78D" secondAttribute="bottom" constant="40" id="jzd-35-gIE"/>
+                <constraint firstItem="Gz0-vn-78D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="m3J-S4-cXs"/>
+                <constraint firstItem="yrP-FU-POF" firstAttribute="top" secondItem="wKy-WE-66T" secondAttribute="bottom" constant="30" id="phJ-rs-YIK"/>
+                <constraint firstItem="iX3-lA-oGG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t5R-4p-fQf"/>
+                <constraint firstItem="By4-UL-8Qj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u9Y-te-Yz4"/>
+            </constraints>
+            <point key="canvasLocation" x="28" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

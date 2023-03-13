@@ -15,7 +15,7 @@ class CreateBusinessViewController: UIViewController {
     @IBOutlet weak var phoneNumberTextField: UITextField?
     @IBOutlet weak var aboutBusinessTextField: UITextField!
     @IBOutlet weak var saveBusinessButton: UIButton!
-    
+    @IBOutlet weak var addPhoto: UIButton!
     
     
     override func viewDidLoad() {
@@ -23,4 +23,11 @@ class CreateBusinessViewController: UIViewController {
 
     }
 
+    //MARK: - IBActions
+    
+    
+    @IBAction func saveBusinessAction(_ sender: Any) {
+       
+    }
+    
 }

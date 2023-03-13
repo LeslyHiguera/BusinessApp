@@ -12,6 +12,7 @@ class ListBusinessViewController: UIViewController {
     //MARK: - IBOutlets
     
     @IBOutlet weak var businessTableView: UITableView!
+    @IBOutlet weak var addButton: UIButton!
     
     //MARK: - Properties
     
@@ -21,12 +22,13 @@ class ListBusinessViewController: UIViewController {
         super.viewDidLoad()
         setTableView()
         title = "Listado de negocios"
+
     }
 
     // MARK: - Methods
     
     private func setTableView() {
-        businessTableView.register(.init(nibName: "BusinessCell", bundle: nil), forCellReuseIdentifier: "cell")
+        businessTableView.register(.init(nibName: CustomTableViewCell.name, bundle: nil), forCellReuseIdentifier: "myCell")
         setTableViewViewDelegates()
     }
     
@@ -34,5 +36,13 @@ class ListBusinessViewController: UIViewController {
         businessTableView.dataSource = adapter
         businessTableView.delegate = adapter
     }
-
+    
+    //MARK: - IBAction
+    
+    
+    @IBAction func addButtonAction(_ sender: Any) {
+        let vc = CreateBusinessViewController()
+        self.present(vc, animated: true)
+    }
+    
 }

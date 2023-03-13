@@ -22,7 +22,7 @@ extension ListOfBusinessAdapter: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BusinessCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as? CustomTableViewCell else { return UITableViewCell() }
         return cell
     }
     
@@ -38,5 +38,7 @@ extension ListOfBusinessAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150
     }
+    
+    
     
 }

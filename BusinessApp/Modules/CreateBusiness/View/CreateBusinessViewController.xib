@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateBusinessViewController" customModule="BusinessApp" customModuleProvider="target">
             <connections>
                 <outlet property="aboutBusinessTextField" destination="B8b-hw-nnO" id="NuW-Ot-Gap"/>
+                <outlet property="addPhoto" destination="fJV-5J-RVe" id="axe-mn-0s1"/>
                 <outlet property="nameBusinessTextField" destination="7D1-Ym-F9q" id="dAN-Nh-FP6"/>
                 <outlet property="phoneNumberTextField" destination="GtY-wg-g2R" id="nj7-k5-56R"/>
                 <outlet property="saveBusinessButton" destination="Bik-TN-0sw" id="DpL-QH-bsw"/>
@@ -28,7 +31,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre de tu negocio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-Ym-F9q">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de tu negocio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-Ym-F9q">
                     <rect key="frame" x="68.666666666666686" y="173" width="253" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="253" id="327-Xb-y0f"/>
@@ -43,7 +46,7 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teléfono celular" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtY-wg-g2R">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtY-wg-g2R">
                     <rect key="frame" x="68.666666666666686" y="253" width="253" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="253" id="Vt7-ia-GT3"/>
@@ -58,7 +61,7 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" text="Cuéntanos sobre tu negocio" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-hw-nnO">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Cuéntanos sobre tu negocio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-hw-nnO">
                     <rect key="frame" x="68.666666666666686" y="333" width="253" height="150"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="253" id="2Hj-kd-qqp"/>
@@ -68,11 +71,21 @@
                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJV-5J-RVe">
+                    <rect key="frame" x="68.666666666666671" y="498" width="102.00000000000001" height="21"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                    <color key="tintColor" name="AccentColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Agregar Foto" image="paperclip" catalog="system">
+                        <color key="titleColor" systemColor="linkColor"/>
+                    </state>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bik-TN-0sw">
-                    <rect key="frame" x="130" y="735" width="130" height="35"/>
+                    <rect key="frame" x="130" y="730" width="130" height="40"/>
                     <color key="backgroundColor" red="0.14099487660000001" green="0.60681098700000002" blue="0.74697810409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="KH6-dS-u3K"/>
+                        <constraint firstAttribute="height" constant="40" id="oIS-S0-ONH"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Guardar">
@@ -80,9 +93,12 @@
                     </buttonConfiguration>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="22"/>
+                            <integer key="value" value="20"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveBusinessAction:" destination="-1" eventType="touchUpInside" id="t7h-UF-h72"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGi-UL-pEo">
                     <rect key="frame" x="68.666666666666671" y="147" width="54" height="16"/>
@@ -103,6 +119,7 @@
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="253" id="EvK-Bf-MYT"/>
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="centerX" secondItem="DpL-wn-RoE" secondAttribute="centerX" id="IDi-A8-uCb"/>
                 <constraint firstItem="7D1-Ym-F9q" firstAttribute="top" secondItem="zGi-UL-pEo" secondAttribute="bottom" constant="10" id="INM-Kz-bMz"/>
+                <constraint firstItem="fJV-5J-RVe" firstAttribute="top" secondItem="B8b-hw-nnO" secondAttribute="bottom" constant="15" id="MCU-PW-Y5G"/>
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="leading" secondItem="7D1-Ym-F9q" secondAttribute="leading" id="Poc-AL-dRI"/>
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="leading" secondItem="bms-pg-hJb" secondAttribute="leading" id="Se2-AW-XXl"/>
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="leading" secondItem="Xcl-u8-efT" secondAttribute="leading" id="UeF-Zv-3Or"/>
@@ -110,12 +127,20 @@
                 <constraint firstItem="GtY-wg-g2R" firstAttribute="centerX" secondItem="Bik-TN-0sw" secondAttribute="centerX" id="XoM-nG-oZq"/>
                 <constraint firstItem="zGi-UL-pEo" firstAttribute="top" secondItem="DpL-wn-RoE" secondAttribute="bottom" constant="48" id="Ytg-F9-Odl"/>
                 <constraint firstItem="Xcl-u8-efT" firstAttribute="top" secondItem="GtY-wg-g2R" secondAttribute="bottom" constant="20" id="leY-16-gS9"/>
+                <constraint firstItem="fJV-5J-RVe" firstAttribute="leading" secondItem="B8b-hw-nnO" secondAttribute="leading" id="owQ-NN-XIY"/>
                 <constraint firstItem="bms-pg-hJb" firstAttribute="top" secondItem="7D1-Ym-F9q" secondAttribute="bottom" constant="20" id="ybd-Tu-Dat"/>
             </constraints>
             <point key="canvasLocation" x="32" y="21"/>
         </view>
     </objects>
     <resources>
+        <image name="paperclip" catalog="system" width="121" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

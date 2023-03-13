@@ -1,15 +1,15 @@
 //
-//  BusinessCell.swift
+//  CustomTableViewCell.swift
 //  BusinessApp
 //
-//  Created by Wilson David Molina Lozano on 8/03/23.
+//  Created by Wilson David Molina Lozano on 9/03/23.
 //
 
 import UIKit
 
-class BusinessCell: UITableViewCell {
+class CustomTableViewCell: UITableViewCell {
     
-    static let name = String(describing: BusinessCell.self)
+    static let name = String(describing: CustomTableViewCell.self)
     
     //MARK: - IBOutlets
     
@@ -17,14 +17,13 @@ class BusinessCell: UITableViewCell {
     @IBOutlet private weak var phoneNumberLabel: UILabel!
     @IBOutlet private weak var descriptionBusinessLabel: UILabel!
     @IBOutlet private weak var businessImage: UIImageView!
-    
-    //MARK: - Properties
-    
-    var showBusiness: MyBusiness?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
 }
